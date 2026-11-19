@@ -73,7 +73,7 @@ nav a {
     background-color: #131e36;
     color: #94a3b8;
     text-decoration: none;
-    margin-right: 50px;
+    margin-right: 20px;
     font-size: 1.3rem;
     padding: 13px 55px;
     border-top-left-radius: 6px;
@@ -94,14 +94,31 @@ nav a:hover {
 }
 
 nav a.active {
+    position: relative;
     font-size: 1.6rem;
     background-color: #0f172a;
     color: #e5e7eb;
-    padding: 12px 55px;
+    padding: 14px 55px;
     border-left: 2px solid #00b4d8;
     border-right: 2px solid #00b4d8;
     border-top: 2px solid #00b4d8;
-    box-shadow:0 2px 15px #00b4d857;
+    overflow: visible;
+}
+
+nav a.active::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    height: 15px;
+    background: #00b4d857;
+    filter: blur(15px);
+    z-index: -1;
+}
+
+nav a.active:hover {
+    box-shadow:none;
 }
 
 /* Hauptbereich */
@@ -783,7 +800,7 @@ footer p {
     }
 
     nav a.active {
-        padding: 12px 38px;
+        padding: 14px 38px;
     }
 
     .footer-logo img {
@@ -819,17 +836,17 @@ footer p {
 
     nav a {
         font-size: 1rem;
-        padding: 12px 18px;
+        padding: 12px 12px;
         font-weight: bold;
     }
 
     nav a:hover {
-        padding: 12px 18px;
+        padding: 14px 18px;
     }
 
     nav a.active {
         font-size: 1.2rem;
-        padding: 12px 18px;
+        padding: 15px 12px;
     }
 
     .footer-logo img {
@@ -874,7 +891,7 @@ footer p {
     .menu-toggle {
         display: block;
         background: none;
-        border: 2px solid #94a3b8;
+        border: 2px solid #00b4d857;
         border-radius: 6px;
         color: #94a3b8;
         padding-bottom: 4px;
@@ -883,7 +900,7 @@ footer p {
 
     .menu-toggle:hover {
         color: #e5e7eb;
-        border: 2px solid #e5e7eb;
+        border: 2px solid #00b4d8;
     }
     
     nav {
@@ -954,6 +971,95 @@ footer p {
 
     .footer-logo img {
         width: 140px;
+    }
+
+    .timeline {
+        margin-top:40px;
+    }
+
+    .timeline::before {
+        left:50%;
+        bottom: -40px;
+    }
+
+    .timeline-item {
+        display:inline;
+        margin-bottom: 40px;
+    }
+
+    .timeline-date {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .timeline-dot {
+        display: none;
+    }
+
+    .timeline-content {
+        padding: 6%;
+    }
+
+    .timeline-item:hover .timeline-content {
+        transform: translateX(0px) translateY(-10px);
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .timeline-details p {
+        font-size: 1rem;
+        color: #cbd5e1;
+    }
+
+    .timeline-divider {
+        padding-right: 100%;
+    }
+
+    .contact-card {
+        min-height:0px;
+    }
+
+    .contact-card::before {
+        background-image:url("../images/kk_logo.jpg");
+    }
+
+    .contact-content {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .contact-card h3 {
+        text-align: center;
+        font-size:2rem;
+        margin-bottom:5px;
+    }
+
+    .contact-card h4 {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom:25px;
+    }
+
+    .certificate-item:hover {
+        transform: none;
+    }
+
+    .skills {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 8%;
+    }
+
+    .project-filter button {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 2%;
     }
 }
 
