@@ -836,12 +836,12 @@ footer p {
 
     nav a {
         font-size: 1rem;
-        padding: 12px 12px;
+        padding: 13px 12px;
         font-weight: bold;
     }
 
     nav a:hover {
-        padding: 12px 18px;
+        padding: 13px 18px;
     }
 
     nav a.active {
