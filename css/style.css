@@ -841,12 +841,12 @@ footer p {
     }
 
     nav a:hover {
-        padding: 14px 18px;
+        padding: 12px 18px;
     }
 
     nav a.active {
         font-size: 1.2rem;
-        padding: 14px 12px;
+        padding: 13.5px 12px;
     }
 
     .footer-logo img {
