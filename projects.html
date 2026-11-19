@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kevin Krummacker | Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="header-content">
+        <h1>Kevin Krummacker</h1>
+
+        <p>Softwareentwickler / Software Developer</p>
+
+        <button class="menu-toggle" aria-label="Menü öffnen">
+            ☰
+        </button>
+
+        <nav>
+            <a href="index.html">Über mich</a>
+            <a href="projects.html" class="active">Projekte</a>
+            <a href="about.html">Werdegang</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+    </div>
+
+    <div class="header-logo">
+        <img src="images/kk_logo_wide.png" alt="Logo Kevin Krummacker">
+    </div>
+
+</header>
+
+<main>
+
+<section class="hero">
+
+<br>
+<h2>Projekte</h2>
+<p>
+Auf dieser Seite finden Sie eine Auswahl meiner bisherigen Projekte, die meine Fähigkeiten und 
+Erfahrungen in der Softwareentwicklung demonstrieren. <br> Jedes Projekt wurde mit Sorgfalt 
+entwickelt und zeigt meine Kompetenz in verschiedenen Programmiersprachen, Frameworks und 
+Technologien. <br> Ich lade Sie ein, die Projekte zu erkunden und mehr über meine Arbeit zu erfahren.
+Sie finden meine Projekte auch auf <a href="https://github.com/kevin-krummacker" target="_blank">GitHub</a>.
+<br><br>
+</p>
+
+<div class="project-filter">
+    <button data-filter="all">Alle</button>
+    <button data-filter="java">Java</button>
+    <button data-filter="csharp">C#</button>
+    <button data-filter="php">PHP</button>
+    <button data-filter="python">Python</button>
+    <button data-filter="web">Webentwicklung</button>
+    <button data-filter="database">Datenbanken</button>
+</div>
+
+
+<section class="project-card" data-tags="java web database">
+
+    <h3>Besuchsverwaltungs- und Anzeigesystem</h3>
+
+    <hr class="project-divider">
+
+    <div class="badges">
+        <span class="badge-project">Java</span>
+        <span class="badge-project">Spring Boot</span>
+        <span class="badge-project">Vaadin</span>
+        <span class="badge-project">H2</span>
+        <span class="badge-project">JPA</span>
+        <span class="badge-project">REST API</span>
+    </div>
+
+    <p>
+    Mehrschichtige Full-Stack-Webanwendung zur Verwaltung und Anzeige von 
+    Besucherdaten inklusive Empfangsanzeige.
+    <br>
+    Die Anwendung ermöglicht die Erfassung, Verwaltung und Darstellung von 
+    Besuchen mit Such-, Filter- und Echtzeit-Funktionen.
+    </p>
+
+    <details>
+
+    <summary>
+    Details anzeigen
+    </summary>
+
+    <p>
+    Entwicklung einer mehrschichtigen Full-Stack-Webanwendung zur Verwaltung
+    und Anzeige von Besuchsdaten. Ziel des Projekts war die digitale Erfassung,
+    Verwaltung und übersichtliche Darstellung von Besuchsinformationen mit einer
+    integrierten Empfangsanzeige.
+    </p>
+
+    <p>
+    Die Anwendung wurde mit Java, Spring Boot und Vaadin umgesetzt und basiert
+    auf einer strukturierten 4-Schichtenarchitektur. Neben der Benutzeroberfläche
+    wurden die Geschäftslogik, Datenbankanbindung und Persistenz mit JPA/Hibernate
+    sowie einer H2-Datenbank entwickelt. Zusätzlich wurden CRUD-Funktionen,
+    Such- und Filtermöglichkeiten, DTOs sowie REST-Schnittstellen umgesetzt.
+    </p>
+
+    <p>
+    Bei der Umsetzung wurden verschiedene Bereiche moderner Softwareentwicklung
+    verbunden: von der Strukturierung der Anwendung über die Entwicklung von
+    Backend- und Frontend-Komponenten bis hin zu Tests, Fehleranalyse und
+    technischer Dokumentation.
+    </p>
+
+    <hr class="project-divider">
+
+    <h4>Einblicke</h4>
+
+        <div class="project-gallery" data-gallery="visitor">
+
+        <img class="gallery-image"
+            src="images/visitor/visitor1.jpg"
+            alt="Besuchsverwaltungssystem">
+
+        <div class="gallery-controls">
+
+            <button class="gallery-prev">❮</button>
+
+            <span class="gallery-counter"></span>
+
+            <button class="gallery-next">❯</button>
+
+        </div>
+
+    </div>
+
+    <hr class="project-divider">
+
+    <p>
+    GitHub:
+    <a href="https://github.com/kevin-krummacker/Visitor-Management-System" target="_blank">Visitor-Management-System</a>
+    </p>
+    </details>
+</section>
+
+
+<section class="project-card" data-tags="python hardware">
+
+    <h3>PiCar</h3>
+
+    <hr class="project-divider">
+
+    <div class="badges">
+        <span class="badge-project">Python</span>
+        <span class="badge-project">Raspberry Pi</span>
+    </div>
+
+    <p>
+    Steuerungssoftware für ein autonomes Fahrzeug mit Ultraschall-, Kamera- und Grayscale-Sensoren 
+    zur Hindernis- und Abgrunderkennung.
+    </p>
+
+    <details>
+
+    <summary>
+    Details anzeigen
+    </summary>
+
+    <p>
+    Entwicklung einer Steuerungssoftware für ein autonomes Raspberry-Pi-Fahrzeug.
+    Das Projekt beschäftigt sich mit der Verarbeitung verschiedener Sensordaten
+    und der Umsetzung von Entscheidungslogik für die Navigation.
+    </p>
+
+    <p>
+    Umgesetzt wurden Funktionen zur Hinderniserkennung mittels Ultraschallsensor,
+    die Auswertung von Kameradaten sowie die Erkennung von Fahrbahnbegrenzungen
+    über Grayscale-Sensoren.
+    Dabei lag der Fokus auf der Verbindung von Softwareentwicklung,
+    Hardwareansteuerung und praktischer Problemlösung.
+    </p>
+
+    <hr class="project-divider">
+
+    <h4>Einblicke</h4>
+
+    <div class="project-gallery" data-gallery="picar">
+
+        <img class="gallery-image"
+            src="images/picar/picar1.jpg"
+            alt="PiCar">
+
+        <div class="gallery-controls">
+
+            <button class="gallery-prev">❮</button>
+
+            <span class="gallery-counter"></span>
+
+            <button class="gallery-next">❯</button>
+
+        </div>
+
+    </div>
+
+    <hr class="project-divider">
+
+    <p>
+    GitHub:
+    <a href="https://github.com/kevin-krummacker/PiCar" target="_blank">PiCar</a>
+    </p>
+    </details>
+</section>
+
+
+
+<section class="project-card" data-tags="web database php">
+
+    <h3>Firmenwebsite</h3>
+
+    <hr class="project-divider">
+
+    <div class="badges">
+        <span class="badge-project">PHP</span>
+        <span class="badge-project">Laravel</span>
+        <span class="badge-project">HTML</span>
+        <span class="badge-project">CSS</span>
+        <span class="badge-project">MariaDB</span>
+    </div>
+
+    <p>
+    Webanwendung für ein fiktives Unternehmen mit dynamischen Inhalten und relationaler Datenbank.
+    </p>
+
+    <details>
+
+    <summary>
+    Details anzeigen
+    </summary>
+
+    <p>
+    Entwicklung einer dynamischen Firmenwebsite für ein fiktives Unternehmen
+    mit Laravel und MariaDB.
+    </p>
+
+    <p>
+    Das Projekt umfasst die Umsetzung einer Webanwendung mit strukturierter
+    Datenhaltung, serverseitiger Logik und einer responsiven Benutzeroberfläche.
+    Dabei wurden grundlegende Konzepte moderner Webentwicklung wie Routing,
+    Datenbankanbindung und Trennung von Darstellung und Logik umgesetzt.
+    </p>
+
+    <hr class="project-divider">
+
+    <h4>Einblicke</h4>
+
+    <div class="project-gallery" data-gallery="website">
+
+        <img class="gallery-image"
+            src="images/website/website1.jpg"
+            alt="Firmenwebsite">
+
+        <div class="gallery-controls">
+
+            <button class="gallery-prev">❮</button>
+
+            <span class="gallery-counter"></span>
+
+            <button class="gallery-next">❯</button>
+
+        </div>
+
+    </div>
+
+    <hr class="project-divider">
+
+    <p>
+    GitHub:
+    <a href="https://github.com/kevin-krummacker/AIgentus" target="_blank">Firmenwebsite</a>
+    </p>
+    </details>
+</section>
+
+
+
+<section class="project-card" data-tags="java csharp database">
+
+    <h3>Ticketsystem</h3>
+    <hr class="project-divider">
+    <div class="badges">
+        <span class="badge-project">Java</span>
+        <span class="badge-project">C#</span>
+    </div>
+    <p>
+    CRUD-Anwendung zur Verwaltung von Support-Tickets und Benutzerdaten mit Datenbankanbindung, 
+    umgesetzt in drei Sprachen.
+    </p>
+
+    <details>
+
+        <summary>
+        Details anzeigen
+        </summary>
+
+        <p>
+        Entwicklung einer CRUD-Anwendung zur Verwaltung von Support-Tickets,
+        Benutzerdaten und Bearbeitungsständen.
+        </p>
+
+        <p>
+        Das Projekt wurde in Java und C# umgesetzt und beinhaltet die Verwaltung
+        von Datenobjekten, Benutzerinteraktionen sowie die Anbindung an eine
+        Datenbank. Dabei wurden grundlegende Konzepte der objektorientierten
+        Programmierung und Softwarestrukturierung angewendet.
+        </p>
+
+        <hr class="project-divider">
+
+        <p>
+        GitHub:
+        <a href="https://github.com/kevin-krummacker/Ticketsystem-Java-" target="_blank">Ticketsystem Java</a>
+        |
+        <a href="https://github.com/kevin-krummacker/Ticketsystem-C-" target="_blank">Ticketsystem C#</a>
+        </p>
+    </details>
+</section>
+
+
+<section class="project-card" data-tags="python java">
+
+    <h3>Weitere Projekte</h3>
+    <hr class="project-divider">
+    <p>
+
+    <details>
+
+        <summary>
+        Details anzeigen
+        </summary>
+
+        <p>
+        Neben den größeren Projekten entstanden während meiner Ausbildung und
+        Weiterbildung weitere kleinere Anwendungen, mit denen verschiedene
+        Programmierkonzepte und Technologien praktisch umgesetzt wurden.
+        </p>
+
+        <p>
+        Dazu gehören unter anderem ein Python-Textadventure, eine Quiz-Anwendung
+        sowie ein Warenkorb-System. Die Projekte dienten dazu, unterschiedliche
+        Ansätze der Softwareentwicklung kennenzulernen und Programmierkenntnisse
+        zu vertiefen.
+        </p>
+
+        <hr class="project-divider">
+
+        <p>
+        GitHub:
+        <a href="https://github.com/kevin-krummacker/PEITHORN-Text-Adventure-Python-" target="_blank">Python-Textadventure</a>
+        |
+        <a href="https://github.com/kevin-krummacker/Quiz-Game" target="_blank">Quiz-Anwendung</a>
+        |
+        <a href="https://github.com/kevin-krummacker/Warenkorb" target="_blank">Warenkorb-System</a>
+        </p>
+    </details>
+</section>
+
+</section>
+
+</main>
+
+<footer>
+    <div class="footer-logo">
+        <img src="images/kk_logo_wide.jpg" alt="Logo Kevin Krummacker">
+    </div>
+
+    <p>&copy; 2026 | Kevin Krummacker</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
