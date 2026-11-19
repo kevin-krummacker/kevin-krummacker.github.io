@@ -19,30 +19,30 @@ const galleries = {
 
     visitor: [
 
-        "images/visitor/visitor1.jpg",
-        "images/visitor/visitor2.jpg",
-        "images/visitor/visitor3.jpg",
-        "images/visitor/visitor4.jpg",
-        "images/visitor/visitor5.jpg",
-        "images/visitor/visitor6.jpg"
+        "images/Visitor/visitor1.jpg",
+        "images/Visitor/visitor2.jpg",
+        "images/Visitor/visitor3.jpg",
+        "images/Visitor/visitor4.jpg",
+        "images/Visitor/visitor5.jpg",
+        "images/Visitor/visitor6.jpg"
 
     ],
 
     picar: [
 
-        "images/picar/picar1.jpg",
-        "images/picar/picar2.jpg",
-        "images/picar/picar3.jpg"
+        "images/PiCar/PiCar1.jpg",
+        "images/PiCar/PiCar2.jpg",
+        "images/PiCar/PiCar3.jpg"
 
     ],
 
     website: [
 
-        "images/website/website1.jpg",
-        "images/website/website2.jpg",
-        "images/website/website3.jpg",
-        "images/website/website4.jpg",
-        "images/website/website5.jpg"
+        "images/Website/website1.jpg",
+        "images/Website/website2.jpg",
+        "images/Website/website3.jpg",
+        "images/Website/website4.jpg",
+        "images/Website/website5.jpg"
 
     ],
 
