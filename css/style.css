@@ -626,6 +626,14 @@ a:hover {
     background: #0f172a;
 }
 
+.certificate-item .button {
+    background-color: #0f172a;
+}
+
+.certificate-item .button:hover {
+    background-color: #131e36;
+}
+
 /* contact */
 
 .contact-card {
