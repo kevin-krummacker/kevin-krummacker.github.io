@@ -336,7 +336,7 @@ summary:active {
 
 
 .certificate-item {
-    background-color: #0f172a;
+    background-color: #131e36;
     border: 2px solid #00b4d857;
     border-radius: 8px;
     padding: 20px;
@@ -345,7 +345,7 @@ summary:active {
 }
 
 .certificate-item:hover {
-    background-color: #131e36;
+    background-color: #0f172a;
     border-color:#00b4d8;
     box-shadow:0 2px 15px #00b4d857;
     transform: translateX(15px);
@@ -624,6 +624,14 @@ a:hover {
     color: #e5e7eb;
     border: 2px solid #00b4d8;
     background: #0f172a;
+}
+
+.certificate-item:hover .button {
+    background-color: #0f172a;
+}
+
+.certificate-item .button:hover {
+    background-color: #131e36;
 }
 
 /* contact */
